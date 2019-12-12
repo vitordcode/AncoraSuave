@@ -48,3 +48,19 @@ function scrollToIdOnClick(event) {
     scrollToPosition(to);
 }
 ```
+
+##### Por último precisamos indicar que queremos uma ancora suave.
+
+```
+function scrollToPosition(to) {
+    window.scroll({
+        top: to,
+        behavior: "smooth",
+    });
+}
+```
+
+
+
+#### Espero que eu tenha ajudado, até mais!
+
