@@ -39,8 +39,7 @@ function getScrollTopByHref(element) {
 }
 ```
 
-##### Pronto, nosso script ja sabe o local de cada item na página, agora precisamos previnir o evento padrão do click, também precisamos 
-indicar a altura do Menu para que ele nao fique por cima do conteúdo assim que o envento for ativado.
+##### Pronto, nosso script ja sabe o local de cada item na página, agora precisamos previnir o evento padrão do click, também precisamos indicar a altura do Menu para que ele nao fique por cima do conteúdo assim que o envento for ativado.
 
 ```
 function scrollToIdOnClick(event) {
