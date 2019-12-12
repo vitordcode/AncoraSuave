@@ -1,4 +1,4 @@
-# Ancora sua com JavaScript
+# Ancora suave com JavaScript
 
 
 
