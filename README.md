@@ -22,10 +22,19 @@ $('html, body').animate({
 ```
 const menuItems = document.querySelectorAll('.navbar a[href^="#"]');
 ```
-##### Próximo passo é adicionar o evento para cada item ao clicar nomeando o evento como preferir, no meu caso "scrollToIdOnClick".  
+##### Próximo passo é adicionar o evento para cada item ao clicar nomeando a função como preferir, no meu caso "scrollToIdOnClick".  
 
 ```
 menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
 })
+```
+
+##### Agora precisamos fazer a referencia entre o "href" e o item, também pegar sua posição atual na pagina atravéz do "offsetTop" 
+
+```
+function getScrollTopByHref(element) {
+    const id = element.getAttribute('href');
+    return document.querySelector(id).offsetTop;
+}
 ```
