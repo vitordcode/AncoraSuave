@@ -16,7 +16,16 @@ $('html, body').animate({
 
 ##### O objetivo é mudarmos esse pulo, para um scroll suave. Isso garante que o usuário entenda o contexto em que ele está, e em qual local na página esse conteúdo se encontra.
 
+
+##### Primeiro devemos indicar o tipo de link que ocorrerá o evento, no nosso caso, queremos somente links que forem seguidos por um "#" (ID), assim não teremos problemas com outros tipos de link no nosso Navbar. Ex: link para área de contato, página de login.
+
 ```
 const menuItems = document.querySelectorAll('.navbar a[href^="#"]');
 ```
-##### Primeiro devemos indicar o tipo de link que ocorrerá o evento, no nosso caso, queremos somente links que forem seguidos por um "#" (ID), assim não teremos problemas com outros tipos de link no nosso Navbar. Ex: link para área de contato, página de login.
+##### Próximo passo é adicionar o evento para cada item ao clicar atribuindo  
+
+```
+menuItems.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick);
+})
+```
