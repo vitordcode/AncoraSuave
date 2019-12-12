@@ -22,7 +22,7 @@ $('html, body').animate({
 ```
 const menuItems = document.querySelectorAll('.navbar a[href^="#"]');
 ```
-##### Próximo passo é adicionar o evento para cada item ao clicar atribuindo  
+##### Próximo passo é adicionar o evento para cada item ao clicar nomeando o evento como preferir, no meu caso "scrollToIdOnClick".  
 
 ```
 menuItems.forEach(item => {
