@@ -30,7 +30,7 @@ menuItems.forEach(item => {
 })
 ```
 
-##### Agora precisamos fazer a referencia entre o "href" e o item, também pegar sua posição atual na pagina atravéz do "offsetTop". 
+##### Agora precisamos fazer a referência entre o "href" e o item, também pegar sua posição atual na pagina atravéz do "offsetTop". 
 
 ```
 function getScrollTopByHref(element) {
