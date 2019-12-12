@@ -1,4 +1,4 @@
-
+# Soft anchor with javascript
 ```
 $('html, body').animate({
     scrollTop: targetOffset - 100
