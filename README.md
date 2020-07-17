@@ -16,7 +16,7 @@ const menuItems = document.querySelectorAll('.navbar a[href^="#"]');
 ```
 - Próximo passo é adicionar o evento para cada item ao clicar nomeando a função como preferir, no meu caso **scrollToIdOnClick**.  
 
-```sh
+```js
 menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
 })
@@ -24,7 +24,7 @@ menuItems.forEach(item => {
 
 - Agora precisamos fazer a referência entre o **href** e o item, também pegar sua posição atual na pagina atravéz do **offsetTop**. 
 
-```sh
+```js
 function getScrollTopByHref(element) {
     const id = element.getAttribute('href');
     return document.querySelector(id).offsetTop;
@@ -33,7 +33,7 @@ function getScrollTopByHref(element) {
 
 - Pronto, nosso script ja sabe o local de cada item na página, agora precisamos previnir o evento padrão do **click**, também precisamos indicar a altura do Menu para que ele nao fique por cima do conteúdo assim que o envento for ativado.
 
-```sh
+```js
 function scrollToIdOnClick(event) {
     event.preventDefault();
     const to = getScrollTopByHref(event.target) - 65;
@@ -43,7 +43,7 @@ function scrollToIdOnClick(event) {
 
 - Por último precisamos indicar que queremos uma ancora suave.
 
-```sh
+```js
 function scrollToPosition(to) {
     window.scroll({
         top: to,
