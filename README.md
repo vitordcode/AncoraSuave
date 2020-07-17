@@ -11,7 +11,7 @@
 
 - Primeiro devemos indicar o tipo de link que ocorrerá o evento, no nosso caso, queremos somente links que forem seguidos por um **#**(id), assim não teremos problemas com outros tipos de link no nosso Navbar. Ex: link para área de contato, página de login.
 
-```sh
+```js
 const menuItems = document.querySelectorAll('.navbar a[href^="#"]');
 ```
 - Próximo passo é adicionar o evento para cada item ao clicar nomeando a função como preferir, no meu caso **scrollToIdOnClick**.  
